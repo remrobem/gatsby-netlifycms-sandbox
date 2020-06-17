@@ -7,6 +7,6 @@ Hey
 
 ## Header 2
 
-
-
 ![Tree](tree.jpg)
+
+Tree
