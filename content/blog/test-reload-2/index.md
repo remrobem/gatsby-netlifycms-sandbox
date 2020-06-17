@@ -9,9 +9,7 @@ b
 
 c
 
-[test link](epiphanyeden.org)
-
-
+[test link](http://epiphanyeden.org)
 
 > this is a quote
 
