@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: dev
+  branch: master
 
 media_folder: static/img
 public_folder: /img
@@ -36,18 +36,3 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-
-  - name: 'videos'
-    label: 'Videos'
-    folder: 'content/videos'
-    create: true      
-    slug: 'videos'
-    media_folder: ''
-    public_folder: ''
-    path: '{{title}}/videos'
-    editor:
-      preview: false
-    fields:
-      # - { label: 'Date', name: 'date', widget: 'datetime', format: 'LL', dateFormat: 'MMM D, YYYY' }
-      - { label: 'Date', name: 'date', widget: 'string' }
-      - { label: 'Link', name: 'link', widget: 'string'  }
