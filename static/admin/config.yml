@@ -36,3 +36,16 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'videos'
+    label: 'videos'
+    folder: 'content/videos'
+    create: true      
+    slug: 'videos'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/videos'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Service', name: 'service', widget: 'string' }
+      - { label: 'Video', name: 'video', widget: 'string' }
