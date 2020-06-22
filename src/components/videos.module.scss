@@ -1,0 +1,22 @@
+.videos {
+  display: flex;
+}
+
+.button {
+  //   display: block;
+  flex: 0 0 20%;
+  width: 20%;
+  padding: 0.4rem;
+  border: none;
+  margin: 0.5rem;
+  font-size: 1.3rem;
+  background: red;
+  color: white;
+  border-radius: 25px;
+//   border: 2px solid red;
+  cursor: pointer;
+  transition: 0.3s background;
+}
+.button:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
