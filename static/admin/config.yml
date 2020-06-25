@@ -37,7 +37,7 @@ collections:
       - { label: 'Service Date', name: 'title', widget: 'string' }
       - { label: 'Video Link', name: 'videoLink', widget: 'string' }
       - { label: 'Service Order Link', name: 'serviceOrderlink', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'markdown' }
+      - { label: 'Description', name: 'body', widget: 'markdown' }
   # - name: 'blog1'
   #   label: 'Blog1'
   #   folder: 'content/blog1'
