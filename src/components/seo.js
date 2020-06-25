@@ -53,10 +53,10 @@ const SEO = ({ description, lang, meta, title }) => {
           property: `og:type`,
           content: `website`,
         },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
+        // {
+        //   name: `twitter:card`,
+        //   content: `summary`,
+        // },
         {
           name: `facebook:creator`,
           content: site.siteMetadata.social.facebook,
