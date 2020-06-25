@@ -28,12 +28,13 @@ collections:
     slug: 'services'
     media_folder: ''
     public_folder: ''
-    path: '{{title}}/services'
+    path: '{{title}}/index'
     editor:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
   # - name: 'blog1'
   #   label: 'Blog1'
   #   folder: 'content/blog1'
