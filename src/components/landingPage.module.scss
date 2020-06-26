@@ -1,0 +1,29 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-position: bottom center;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+h1 {
+  margin: 0;
+}
+
+.messageTop {
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+.message {
+  color: white;
+  background: red;
+  width: 60vw;
+  text-align: center;
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

@@ -10,11 +10,19 @@ module.exports = {
   plugins: [
     'gatsby-plugin-sass',
     `gatsby-plugin-netlify-cms`,
+    `gatsby-background-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/services`,
+        name: `services`,
       },
     },
     {
@@ -58,8 +66,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Church of the Epiphany`,
+        short_name: `Epiphany`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
