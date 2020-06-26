@@ -1,26 +1,35 @@
 .background {
+  // background-image: url("../../content/assets/AndTheySaw.jpg");
+  background-image: url("../../content/assets/EpiphanyCandleHymnal.jpg");
   width: 100vw;
   height: 100vh;
   background-position: bottom center;
   background-repeat: repeat-y;
   background-size: cover;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 
 h1 {
   margin: 0;
 }
 
+.container {
+  position: absolute;
+}
+
 .messageTop {
   align-items: center;
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
 }
+
 .message {
   color: white;
-  background: red;
+  background: rgba(249, 31, 42, 0.3);;
   width: 60vw;
   text-align: center;
   padding: 1rem 1rem;
@@ -32,11 +41,11 @@ h1 {
 
 .button {
 	// box-shadow:inset 0px 1px 9px -1px #3dc21b;
-	background: yellow;
+	background: red;
 	border-radius: 8px;
 	display: inline-block;
 	cursor: pointer;
-	color: black;
+	color: white;
 	font-family: Arial;
 	font-size: 17px;
 	padding: 17px 60px;
@@ -44,7 +53,8 @@ h1 {
 	// text-shadow:0px 1px 0px #2f6627;
 }
 .button:hover {
-	background-color:darkgreen
+  background-color:darkred;
+  font-size: 20px;
 }
 .button:active {
 	position:relative;

@@ -2,83 +2,65 @@ import React from "react"
 import { graphql, StaticQuery, useStaticQuery } from "gatsby"
 // import styled from 'styled-components'
 
-import BackgroundImage from "gatsby-background-image"
+// import BackgroundImage from "gatsby-background-image"
 import styles from "./services.module.scss"
 
-// const videos = useStaticQuery(graphql`
-//   {
-//     allMarkdownRemark {
-//       edges {
-//         node {
-//           id
-//           frontmatter {
-//             videoLink
-//             serviceOrderlink
-//             title
-//           }
-//         }
-//       }
-//     }
-//   }
-// `)
-
-// console.log('videos: ', videos)
-
-
-const Services = ({ className }) => (
-  <StaticQuery
-    query={graphql`
-      query {
-        # desktop: file(relativePath: { eq: "../../content/assets/AndTheyTraveled.jpg" })
-        desktop: file(relativePath: { eq: "AndTheySaw.jpg" }) {
-          childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
-              ...GatsbyImageSharpFluid_withWebp
+const Services = () => {
+  const query = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            id
+            frontmatter {
+              videoLink
+              serviceOrderlink
+              title
             }
           }
         }
       }
-    `}
-    render={data => {
-      // Set ImageData.
-      const imageData = data.desktop.childImageSharp.fluid
-      return (
-        <BackgroundImage
-          //   Tag="section"
-          className={styles.background}
-          fluid={imageData}
-          // backgroundColor={`#040e18`}
-        >
-          <div className={styles.messageTop}>
-            <div className={styles.message}>
-              <h1>
-                Due to Covid-19, services and events at Epiphany have been
-                cancelled for the foreseable future
-              </h1>
-            </div>
-            <div className={styles.message}>
-              <h1>
-                In the interim, Sunday services have been recorded and are
-                available here
-              </h1>
-            </div>
+    }
+  `)
+  console.log("services: ", query.allMarkdownRemark.edges)
+  let services = query.allMarkdownRemark.edges.filter( (service) => {
+    return (
+      service.node.frontmatter.videoLink
+    )
+  })
 
-            <a href="https://google.com">
-              <input type="button" className={styles.button} value="Button 3" />
+  console.log("services filtered: ", services)
+
+
+  return (
+    <div className={styles.container}>
+      <div className={styles.background}></div>
+
+      <div className={styles.messageTop}>
+        <div className={styles.message}>
+          <h1>
+            Due to Covid-19, services and events at Epiphany have been cancelled
+            for the foreseable future
+          </h1>
+        </div>
+        <div className={styles.message}>
+          <h1>In the interim, Sunday services are being recorded</h1>
+        </div>
+
+        {services.map(service => {
+          return (
+            <a href={service.node.frontmatter.videoLink}>
+              <input
+                type="button"
+                className={styles.button}
+                value={service.node.frontmatter.title}
+              />
             </a>
-
-          </div>
-        </BackgroundImage>
-      )
-    }}
-  />
-)
-
-// const StyledLandingPage = styled(LandingPage)`
-//   width: 100%;
-//   background-position: bottom center;
-//   background-repeat: repeat-y;
-//   background-size: cover;
-// `
+          )
+        })}
+      </div>
+    </div>
+  )
+}
 
 export default Services
