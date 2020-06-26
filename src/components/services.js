@@ -8,7 +8,7 @@ import styles from "./services.module.scss"
 const Services = () => {
   const query = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark (sort: {order: DESC, fields: frontmatter___date}) {
         edges {
           node {
             id

@@ -21,6 +21,29 @@ const LandingPage = () => {
           </h1>
         </div>
       </div>
+      <div className={styles.bottom}>
+        <a href="https://www.episdionc.org/">
+          <input
+            type="button"
+            className={styles.button}
+            value="NC Episcopal Diocese"
+          />
+        </a>
+        <a href="https://www.episdionc.org/coronavirus/">
+          <input
+            type="button"
+            className={styles.button}
+            value="NC Episcopal Diocese COVID-19"
+          />
+        </a>
+        <a href="https://episcopalchurch.org/">
+          <input
+            type="button"
+            className={styles.button}
+            value="National Episcopal Church"
+          />
+        </a>
+      </div>
     </div>
   )
 }
