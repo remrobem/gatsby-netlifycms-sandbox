@@ -8,6 +8,9 @@ import Header from "../components/header"
 import BackgroundSection from "./landingPage"
 import LandingPage from "./landingPage"
 import Services from "./services"
+import churchLinks from "./churchLinks"
+import styles from "./layout.module.scss"
+import ChurchLinks from "./churchLinks"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -58,6 +61,7 @@ const Layout = ({ location, title, children }) => {
       {/* <header>{header}</header> */}
       <Header />
       <LandingPage />
+      <ChurchLinks />
       <Services />
       {/* <main>{children}</main> */}
       <Footer />

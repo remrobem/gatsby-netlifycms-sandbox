@@ -6,25 +6,26 @@
   justify-content: center;
   padding: 0;
   margin: 0;
-  height: 100vh;
+  height: auto;
   width: 100vw;
   align-items: space-around;
+  background-color: whitesmoke;
 }
 
 .background {
   background-image: url("../../content/assets/service.jpeg");
   width: 100vw;
-  // height: 90vh;
+  height: 80vh;
   background-position: bottom center;
   background-repeat: repeat-y;
-  background-size: cover;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+  // background-size: cover;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
 }
 
 h1 {
   margin: 0;
-  font-size: 1vw;
+  font-size: 4vw;
 }
 
 .messageTop {
@@ -46,4 +47,32 @@ h1 {
   padding: 1rem 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+
 }
+
+.button {
+  background: red;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 1em 1em;
+  text-decoration: none;
+  margin: 0.3rem;
+  border: none;
+}
+.button:hover {
+  background-color: darkred;
+  font-size: 20px;
+}
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
+// .bottom {
+//   align-items: center;
+//   display: flex;
+//   justify-content: center;
+// }
