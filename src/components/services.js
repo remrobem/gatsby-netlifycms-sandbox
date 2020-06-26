@@ -22,15 +22,12 @@ const Services = () => {
       }
     }
   `)
-  console.log("services: ", query.allMarkdownRemark.edges)
+
   let services = query.allMarkdownRemark.edges.filter( (service) => {
     return (
       service.node.frontmatter.videoLink
     )
   })
-
-  console.log("services filtered: ", services)
-
 
   return (
     <div className={styles.container}>
@@ -40,7 +37,7 @@ const Services = () => {
         <div className={styles.message}>
           <h1>
             Due to Covid-19, services and events at Epiphany have been cancelled
-            for the foreseable future
+            for the foreseeable future
           </h1>
         </div>
         <div className={styles.message}>

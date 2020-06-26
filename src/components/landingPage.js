@@ -21,6 +21,7 @@ const LandingPage = () => {
           </h1>
         </div>
       </div>
+      
       <div className={styles.bottom}>
         <a href="https://www.episdionc.org/">
           <input

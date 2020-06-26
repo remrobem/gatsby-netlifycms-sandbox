@@ -58,7 +58,6 @@ const Layout = ({ location, title, children }) => {
       {/* <header>{header}</header> */}
       <Header />
       <LandingPage />
-      <br></br>
       <Services />
       {/* <main>{children}</main> */}
       <Footer />
