@@ -26,7 +26,7 @@ const Services = () => {
   })
 
   return (
-    <section className={styles.container}>
+    <div className={styles.container}>
       <div className={styles.background}></div>
       <div className={styles.messageTop}>
         <div className={styles.message}>
@@ -39,7 +39,7 @@ const Services = () => {
         <div className={styles.message}>
           <h1>In the interim, Sunday services are being recorded</h1>
         </div>
-        <div>
+        <div className={styles.buttonContainer}>
           {services.map(service => {
             return (
               <a href={service.node.frontmatter.videoLink}>
@@ -52,9 +52,9 @@ const Services = () => {
             )
           })}
         </div>
+        
         </div>
-     
-    </section>
+    </div>
   )
 }
 
