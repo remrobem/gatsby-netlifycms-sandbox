@@ -15,55 +15,36 @@ const Header = () => {
   `)
   return (
     <header className={styles.header}>
-      <h1>
-        <Link to="/" className={styles.title}>
-          {data.site.siteMetadata.title}
-        </Link>
-      </h1>
-      <nav>
-        <ul className={styles.navList}>
-          <li>
-            <Link
-              to="/"
-              className={styles.navItem}
-              activeClassName={styles.activeNavItem}
+      <div className={styles.container}>
+        {/* <h1 className={styles.logo}>
+          <img src="../../content/assets/Epiphany.jpg" width="170" height="95" alt="Church drawing"></img>
+        </h1> */}
+        <div className={styles.title}>{data.site.siteMetadata.title} </div>
+
+        <div className={styles.title1}>
+          An Episcopal Church
+          <div className={(styles.title2, styles.address)}>
+            <a
+              href="//maps.google.com/?f=q&amp;hl=en&amp;q=Church of the Epiphany Eden NC&maptype=roadmap"
+              target="_blank"
             >
-              {" "}
-              Home{" "}
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/about"
-              className={styles.navItem}
-              activeClassName={styles.activeNavItem}
-            >
-              {" "}
-              About{" "}
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/blog"
-              className={styles.navItem}
-              activeClassName={styles.activeNavItem}
-            >
-              {" "}
-              Blog{" "}
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contact"
-              className={styles.navItem}
-              activeClassName={styles.activeNavItem}
-            >
-              {" "}
-              Contact{" "}
-            </Link>
-          </li>
-        </ul>
-      </nav>
+              538 Henry St. Eden, NC 27288
+            </a>
+          </div>
+          <div className={(styles.title2, styles.phone)}>
+            <a href="tel:1-336-623-9410">336-623-9410</a>
+          </div>
+          <div className={(styles.title2, styles.email)}>
+            <a href="mailto:epiphanyeden@embarqmail.com">epiphanyeden@embarqmail.com</a>
+          </div>
+        </div>
+        {/* <div>
+          <div className={styles.address}>538 Henry St</div>
+          <div className={styles.address}>Eden, NC 27288</div>
+          <div className={styles.phone}>336-623-9410</div>
+          <div className={styles.email}>epiphanyeden@embarqmail.com</div>
+        </div> */}
+      </div>
     </header>
   )
 }

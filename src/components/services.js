@@ -27,6 +27,7 @@ const Services = () => {
 
   return (
     <div className={styles.container}>
+      <a name="epiphany_services"></a>
       <div className={styles.background}></div>
       <div className={styles.messageTop}>
         <div className={styles.message}>
@@ -43,17 +44,14 @@ const Services = () => {
           {services.map(service => {
             return (
               <a href={service.node.frontmatter.videoLink}>
-                <input
-                  type="button"
-                  className={styles.button}
-                  value={service.node.frontmatter.title}
-                />
+                <button className={styles.button}>
+                  {service.node.frontmatter.title}
+                </button>
               </a>
             )
           })}
         </div>
-        
-        </div>
+      </div>
     </div>
   )
 }
