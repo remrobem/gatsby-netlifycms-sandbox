@@ -8,7 +8,6 @@ import Header from "../components/header"
 import BackgroundSection from "./landingPage"
 import LandingPage from "./landingPage"
 import Services from "./services"
-import churchLinks from "./churchLinks"
 import styles from "./layout.module.scss"
 import ChurchLinks from "./churchLinks"
 

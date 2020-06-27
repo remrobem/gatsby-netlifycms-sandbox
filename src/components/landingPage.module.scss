@@ -1,5 +1,6 @@
 
 .container {
+  position: relative;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -29,7 +30,7 @@ h1 {
 .messageTop {
   align-items: center;
   position: absolute;
-  top: 35%;
+  top: 25%;
   left: 20%;
   // transform: translate(-50%, -50%);
   margin: 0;
