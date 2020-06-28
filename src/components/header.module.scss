@@ -1,17 +1,10 @@
-// .header {
-//     padding: 1rem 0 3rem;
-// }
-
-// img {
-//   max-width: 100%;
-//   height: auto;
-// }
 
 .title {
   font-size: 4vw;
 }
 .title1 {
   font-size: 2vw;
+  color: red
 }
 .title2 {
   font-size: 1.5vw;
@@ -41,45 +34,25 @@
   align-items: center;
   justify-content: space-around;
   flex-wrap: nowrap;
+  text-decoration: none;
 }
 
 .address {
   margin-left: 2em;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 .email {
   margin-left: 2em;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 .phone {
   margin-top: 0.3em;
   margin-left: 2em;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 .title {
   // color: red;
   text-decoration: none;
   font-size: 4vw;
-}
-
-.nav-list {
-  display: flex;
-  margin: 0;
-  list-style-type: none;
-}
-
-.nav-item {
-  color: #999999;
-  font-size: 0.9rem;
-  text-decoration: none;
-  margin-right: 1.9rem;
-}
-
-.nav-item:hover {
-  color: #666666;
-}
-
-.activeNavItem {
-  color: #333333;
 }

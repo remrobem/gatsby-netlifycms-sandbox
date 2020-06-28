@@ -32,13 +32,12 @@ const Services = () => {
       <div className={styles.messageTop}>
         <div className={styles.message}>
           <h1>
-            Due to COVID-19, services and events at Epiphany have been cancelled
-            for the foreseeable future
+            In-person services and events at Epiphany have been suspended due the the COVID-19 pandemic
           </h1>
         </div>
 
         <div className={styles.message}>
-          <h1>In the interim, Sunday services are being recorded</h1>
+          <h1>However, Sunday services are being recorded</h1>
         </div>
         <div className={styles.buttonContainer}>
           {services.map(service => {

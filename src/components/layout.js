@@ -59,9 +59,9 @@ const Layout = ({ location, title, children }) => {
     <div>
       {/* <header>{header}</header> */}
       <Header />
-      <ChurchLinks />
+     
       <LandingPage />
-    
+      <ChurchLinks />
       <Services />
       {/* <main>{children}</main> */}
       <Footer />
