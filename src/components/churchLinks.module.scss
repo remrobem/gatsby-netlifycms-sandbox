@@ -3,7 +3,7 @@
   // position: relative;
   display: flex;
   // flex: 0 1 100%;
-  flex-flow: wrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
   padding: 0;
   margin: 0;
@@ -18,18 +18,21 @@ h1 {
   font-size: 4vw;
 }
 
+a {
+  all: unset;
+}
 .button {
   background: green;
   border-radius: 8px;
   cursor: pointer;
   color: white;
   font-family: Arial;
-  font-size: 2vw;
+  font-size: 1.5vw;
   padding: 1em 1em;
   text-decoration: none;
   margin: 0.3rem;
   border: none;
-  width: 35vw;
+  width: 25vw;
 }
 
 .button:hover {

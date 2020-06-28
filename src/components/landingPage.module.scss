@@ -9,6 +9,7 @@
   height: 75vh;
   width: 100vw;
   align-items: space-around;
+  background-color: black;
 }
 
 .background {
@@ -20,6 +21,7 @@
   background-size: cover;
   filter: blur(2px);
   -webkit-filter: blur(2px);
+  border: none;
   border-bottom: 3em solid #000000;
 
 }

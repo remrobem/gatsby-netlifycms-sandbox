@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Church of the Epiphany`,
+    title: `The Episcopal Church of the Epiphany`,
     description: `Church of the Epiphany. An Episcopal church in Eden, NC that is part of the Diocese of North Carolina`,
     siteUrl: `https://epiphanyeden.org/`,
     social: {

@@ -3,7 +3,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 // import './header.module.scss'
 import styles from "./header.module.scss"
 import { GrLocation } from "react-icons/gr"
-import { FaPhone, FaMapMarkerAlt, FaEnvelope} from "react-icons/fa"
+import { FaPhone, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -23,12 +23,33 @@ const Header = () => {
         </h1> */}
         <div className={styles.title}>
           {data.site.siteMetadata.title}
-          <p className={styles.title1}>An Episcopal Church</p>
+          <div className={(styles.links)}>
+          {/* <div className={(styles.title2, styles.address)}> */}
+
+            <a
+              className={styles.link}
+              href="//maps.google.com/?f=q&amp;hl=en&amp;q=Church of the Epiphany Eden NC&maptype=roadmap"
+              target="_blank"
+            >
+              <FaMapMarkerAlt /> 538 Henry St. Eden, NC 27288
+            </a>
+
+            <a className={styles.link} href="tel:1-336-623-9410">
+              <FaPhone /> 336-623-9410
+            </a>
+
+            <a
+              className={styles.link}
+              href="mailto:epiphanyeden@embarqmail.com"
+            >
+              <FaEnvelope /> epiphanyeden@embarqmail.com
+            </a>
+          </div>
         </div>
-        <div>
+        {/* <div>
           <div className={(styles.title2, styles.address, styles.link)}>
            
-            <a
+            <a className={styles.link}
               href="//maps.google.com/?f=q&amp;hl=en&amp;q=Church of the Epiphany Eden NC&maptype=roadmap"
               target="_blank"
             >
@@ -36,14 +57,16 @@ const Header = () => {
             </a>
           </div>
           <div className={(styles.title2, styles.phone, styles.link)}>
-            <a href="tel:1-336-623-9410"><FaPhone /> 336-623-9410</a>
+            <a className={styles.link}
+            href="tel:1-336-623-9410"><FaPhone /> 336-623-9410</a>
           </div>
           <div className={(styles.title2, styles.email, styles.link)}>
-            <a  href="mailto:epiphanyeden@embarqmail.com">
+            <a  className={styles.link}
+            href="mailto:epiphanyeden@embarqmail.com">
               <FaEnvelope /> epiphanyeden@embarqmail.com
             </a>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
         {/* <div> 
           <div className={styles.address}>538 Henry St</div>
           <div className={styles.address}>Eden, NC 27288</div>
