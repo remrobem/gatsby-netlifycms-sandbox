@@ -1,8 +1,6 @@
 
 .container {
-  // position: relative;
   display: flex;
-  // flex: 0 1 100%;
   flex-flow: row nowrap;
   justify-content: space-around;
   padding: 0;
@@ -39,7 +37,3 @@ a {
   background-color: darkgreen;
   font-weight: bolder;
 }
-// .button:active {
-//   position: relative;
-//   top: 1px;
-// }

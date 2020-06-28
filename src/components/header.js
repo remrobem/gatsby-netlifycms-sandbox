@@ -3,7 +3,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 // import './header.module.scss'
 import styles from "./header.module.scss"
 import { GrLocation } from "react-icons/gr"
-import { FaPhone, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa"
+import { FaPhone, FaMapMarkerAlt, FaEnvelope, FaFacebookSquare, FaInstagramSquare } from "react-icons/fa"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -18,13 +18,10 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        {/* <h1 className={styles.logo}>
-          <img src="../../content/assets/Epiphany.jpg" width="170" height="95" alt="Church drawing"></img>
-        </h1> */}
+
         <div className={styles.title}>
           {data.site.siteMetadata.title}
           <div className={(styles.links)}>
-          {/* <div className={(styles.title2, styles.address)}> */}
 
             <a
               className={styles.link}
@@ -44,6 +41,19 @@ const Header = () => {
             >
               <FaEnvelope /> epiphanyeden@embarqmail.com
             </a>
+
+            <a
+              className={styles.link}
+              href="https://www.facebook.com/epiphanyeden"
+            >
+              <FaFacebookSquare /></a>
+
+              <a
+              className={styles.link}
+              href="https://www.instagram.com/epiphanyeden/"
+            >
+              <FaInstagramSquare /></a>
+
           </div>
         </div>
         {/* <div>

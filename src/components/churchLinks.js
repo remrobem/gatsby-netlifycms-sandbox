@@ -4,12 +4,15 @@ import styles from "./churchLinks.module.scss"
 const ChurchLinks = () => {
   return (
     <div>
+      
+      {/* // Epiphany Links */}
       <div className={styles.container}>
         <a href="#epiphany_services">
           <button className={styles.button}>Epiphany Services</button>
         </a>
       </div>
 
+      {/* // NC Diocese links */}
       <div className={styles.container}>
         <a href="https://conta.cc/3i0nySw">
           <button className={styles.button}>Please Note</button>
@@ -24,6 +27,7 @@ const ChurchLinks = () => {
         </a>
       </div>
 
+      {/* // National Church Links */}
       <div className={styles.container}>
         <a href="https://cathedral.org/worship/">
           <button className={styles.button}>National Cathedral Services</button>
